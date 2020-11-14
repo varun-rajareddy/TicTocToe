@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "40647260254",
+    "firebase_url": "https://gametictactoesample.firebaseio.com",
+    "project_id": "gametictactoesample",
+    "storage_bucket": "gametictactoesample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40647260254:android:76e2cdadbe47a24f9bdccf",
+        "android_client_info": {
+          "package_name": "com.example.gametictactoesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40647260254-3alb62oqs765hccc0ug80s5hdh66cdbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gametictactoesample",
+            "certificate_hash": "7d94f3caca334ec4541de400161e6b0e69033465"
+          }
+        },
+        {
+          "client_id": "40647260254-bq9lsh49c93ou4cffg9dpo796nr3jvhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhdIa4mnRwCi2UIDUKYhqsgUvhBSHl_Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40647260254-bq9lsh49c93ou4cffg9dpo796nr3jvhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
