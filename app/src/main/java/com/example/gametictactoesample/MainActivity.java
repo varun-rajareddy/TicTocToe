@@ -23,16 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static final String TAG = "MainActivity";
-    public static final String KEY_NAME = "name";
+    public static final String KEY_NAME1 = "name1";
+    public static final String KEY_NAME2 = "name2";
 
-    public EditText editTextName;
+    public EditText editTextName1;
+    public EditText editTextName2;
 
     public FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editTextName = findViewById(R.id.edit_Text_Name);
+        editTextName1 = findViewById(R.id.edit_Text_Name1);
+        editTextName2 = findViewById(R.id.edit_Text_Name2);
 
 
 
@@ -57,16 +60,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void saveNote(View v) {
-        String name = editTextName.getText().toString();
+        String name1 = editTextName1.getText().toString();
+        String name2 = editTextName2.getText().toString();
 
         Map<String, Object> note = new HashMap<>();
-        note.put(KEY_NAME , name);
+        note.put(KEY_NAME1 , name1);
+        note.put(KEY_NAME2 , name2);
 
         db.collection("Game").document("Tic tac toe notes").set(note)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(MainActivity.this, "Name saved", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Names saved", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
