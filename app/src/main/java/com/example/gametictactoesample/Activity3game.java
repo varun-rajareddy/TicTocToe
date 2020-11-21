@@ -78,8 +78,8 @@ public class Activity3game extends AppCompatActivity {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()) {
-                            name1 = documentSnapshot.getString(KEY_NAME1);
-                            name2 = documentSnapshot.getString(KEY_NAME2);
+                             name1 = documentSnapshot.getString(KEY_NAME1);
+                             name2 = documentSnapshot.getString(KEY_NAME2);
 
                             //Map<String, Object> note = documentSnapshot.getData();
                             textViewRetriveName1.setText( name1);
@@ -162,22 +162,22 @@ public class Activity3game extends AppCompatActivity {
 
 
 
-//                    textViewPlayerturn.setText(winner + " has won!");
-//
-//                    if(player1Score == 3 ){
-//                        savePlayer1Score(name1,player1Score);
-//                        quitGame();
-//                    }else if(player2Score ==3){
-//                        savePlayer2Score(name2,player2Score);
-//                        quitGame();
-//                    }
-//
-//                    textViewPlayer2Score.setText(String.valueOf(player2Score));
-//                    textViewPlayer1Score.setText(String.valueOf(player1Score));
+                  textViewPlayerturn.setText(winner + " has won!");
+
+                    if(player1Score == 3 ){
+                        savePlayer1Score(name1,player1Score);
+                        quitGame();
+                    }else if(player2Score ==3){
+                        savePlayer2Score(name2,player2Score);
+                        quitGame();
+                    }
+
+                    textViewPlayer2Score.setText(String.valueOf(player2Score));
+                    textViewPlayer1Score.setText(String.valueOf(player1Score));
 
 
 
-                    //  textViewPlayerturn.setVisibility(View.INVISIBLE);
+                  //  textViewPlayerturn.setVisibility(View.INVISIBLE);
 
                     playAgainButton.setVisibility(View.VISIBLE);
 
@@ -189,7 +189,7 @@ public class Activity3game extends AppCompatActivity {
 
                     textViewPlayerturn.setText( " Draw!");
 
-                    //   textViewPlayerturn.setVisibility(View.INVISIBLE);
+                 //   textViewPlayerturn.setVisibility(View.INVISIBLE);
 
                     playAgainButton.setVisibility(View.VISIBLE);
 
@@ -238,15 +238,15 @@ public class Activity3game extends AppCompatActivity {
 
     }
 
-//    public  void quitGame(){
-//
-//
-//        Intent intent4 = new Intent(this, Activity4.class);
-//
-//        startActivity(intent4);
-//
-//
-//    }
+    public  void quitGame(){
+
+
+        Intent intent4 = new Intent(this, Activity4.class);
+
+        startActivity(intent4);
+
+
+    }
 
     public void savePlayer1Score(String name1, int player1Score){
 
@@ -265,7 +265,7 @@ public class Activity3game extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(Activity3game.this, "Error!", Toast.LENGTH_SHORT).show();
-                        //  Log.d(TAG, e.toString());
+                      //  Log.d(TAG, e.toString());
                     }
                 });
 

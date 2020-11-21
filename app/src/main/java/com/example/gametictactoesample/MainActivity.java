@@ -22,7 +22,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
 
-    public static final String TAG = "MainActivity";
+   public static final String TAG = "MainActivity";
     public static final String KEY_NAME1 = "name1";
     public static final String KEY_NAME2 = "name2";
 

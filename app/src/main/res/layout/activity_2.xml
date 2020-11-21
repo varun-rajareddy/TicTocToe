@@ -18,6 +18,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:text="Welcome to the Game"
+        android:textColor="@color/colorPrimary"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

@@ -38,22 +38,23 @@ public class Activity2 extends AppCompatActivity {
         buttonPlayGame = findViewById(R.id.button_play_game);
         loadNote(textViewRetriveName1);
 
-        buttonPlayGame.setOnClickListener(new View.OnClickListener() {
+         buttonPlayGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   openActivity3();
+                openActivity3();
             }
         });
 
     }
 
 
-   public void openActivity3() {
+    public void openActivity3() {
 
         Intent intent3 = new Intent(this,Activity3game.class);
 
         startActivity(intent3);
-   }
+    }
+
 
     public void loadNote(View v) {
         db.collection("Game").document("Tic tac toe notes").get()
@@ -76,7 +77,7 @@ public class Activity2 extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(Activity2.this, "Error!", Toast.LENGTH_SHORT).show();
-                        // Log.d(TAG, e.toString());
+                       // Log.d(TAG, e.toString());
                     }
                 });
     }
